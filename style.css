@@ -261,17 +261,90 @@ footer {
     }
 }
 
+/* Responsive Design */
+
+/* Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+    main {
+        padding: 2rem;
+        max-width: 100%;
+    }
+
+    .grid {
+        gap: 1.5rem;
+    }
+
+    .year-card {
+        padding: 2rem;
+    }
+}
+
+/* Mobile (max-width: 768px) */
 @media (max-width: 768px) {
     header {
+        flex-direction: column;
+        gap: 1rem;
         padding: 1rem;
+        text-align: center;
+    }
+
+    .status {
+        font-size: 0.75rem;
     }
 
     main {
-        padding: 1.5rem;
+        padding: 1rem;
+    }
+
+    h1,
+    h2 {
+        font-size: 1.5rem;
+        /* Smaller headings */
+        margin-bottom: 1.5rem;
+        text-align: center;
     }
 
     .grid {
         grid-template-columns: 1fr;
+        /* Force single column */
+        gap: 1rem;
+    }
+
+    .card {
+        padding: 1.5rem;
+        min-height: auto;
+    }
+
+    .card h3 {
+        font-size: 1.25rem;
+    }
+
+    .year-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+        padding: 1.5rem;
+    }
+
+    .year-card h3 {
+        font-size: 1.5rem;
+    }
+
+    /* Adjust resource items for mobile */
+    .resource-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+        padding: 1rem;
+    }
+
+    .type-badge {
+        align-self: flex-start;
+    }
+
+    .background-orb {
+        opacity: 0.5;
+        /* Reduce distraction on small screens */
     }
 }
 
