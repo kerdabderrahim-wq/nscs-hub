@@ -71,10 +71,17 @@ header {
 }
 
 .logo {
-    height: 60px;
-    /* Adjust height as needed */
-    width: auto;
-    object-fit: contain;
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: -0.5px;
+}
+
+.logo .highlight {
+    background: var(--gradient-1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 
