@@ -1709,6 +1709,12 @@
                                                                                            "category":  "cours"
                                                                                        },
                                                                                        {
+                                                                                           "url":  "./2025-2026 first semester first year/os/cours/NSCS-SYST1 Course_Chapter 7.pdf",
+                                                                                           "name":  "NSCS-SYST1 Course_Chapter 7.pdf",
+                                                                                           "type":  "pdf",
+                                                                                           "category":  "cours"
+                                                                                       },
+                                                                                       {
                                                                                            "url":  "./2025-2026 first semester first year/os/cours/OS1-Course_Chapter 1-draft version.pdf",
                                                                                            "name":  "OS1-Course_Chapter 1-draft version.pdf",
                                                                                            "type":  "pdf",
@@ -1737,6 +1743,18 @@
                                                                                            "name":  "OS1-Course_Chapter 5-draft version.pdf.pdf",
                                                                                            "type":  "pdf",
                                                                                            "category":  "cours"
+                                                                                       },
+                                                                                       {
+                                                                                           "url":  "./2025-2026 first semester first year/os/test \u0026\u0026 exam/NSCS-Exam OS1-25_26 - Standard Answer Key.pdf",
+                                                                                           "name":  "NSCS-Exam OS1-25_26 - Standard Answer Key.pdf",
+                                                                                           "type":  "pdf",
+                                                                                           "category":  "test \u0026\u0026 exam"
+                                                                                       },
+                                                                                       {
+                                                                                           "url":  "./2025-2026 first semester first year/os/test \u0026\u0026 exam/NSCS-Midterm Test OS1-2025 - Standard Answer Key.pdf",
+                                                                                           "name":  "NSCS-Midterm Test OS1-2025 - Standard Answer Key.pdf",
+                                                                                           "type":  "pdf",
+                                                                                           "category":  "test \u0026\u0026 exam"
                                                                                        }
                                                                                    ]
                                                                  },
