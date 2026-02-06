@@ -1134,6 +1134,12 @@
                                                                      "name":  "Algebra 2",
                                                                      "resources":  [
                                                                                        {
+                                                                                           "url":  "./2025-2026  second semester first year/Algebra 2/book/Linear Algebra.pdf",
+                                                                                           "name":  "Linear Algebra.pdf",
+                                                                                           "type":  "pdf",
+                                                                                           "category":  "book"
+                                                                                       },
+                                                                                       {
                                                                                            "url":  "./2025-2026  second semester first year/Algebra 2/Lectures/Chapter1 matrix.pdf",
                                                                                            "name":  "Chapter1 matrix.pdf",
                                                                                            "type":  "pdf",
@@ -1146,8 +1152,20 @@
                                                                                            "category":  "Lectures"
                                                                                        },
                                                                                        {
+                                                                                           "url":  "./2025-2026  second semester first year/Algebra 2/td/Chapter 1 matrices.pdf",
+                                                                                           "name":  "Chapter 1 matrices.pdf",
+                                                                                           "type":  "pdf",
+                                                                                           "category":  "td"
+                                                                                       },
+                                                                                       {
                                                                                            "url":  "./2025-2026  second semester first year/Algebra 2/td/Tutorial 5 Polynomials and Rational Fractions.pdf",
                                                                                            "name":  "Tutorial 5 Polynomials and Rational Fractions.pdf",
+                                                                                           "type":  "pdf",
+                                                                                           "category":  "td"
+                                                                                       },
+                                                                                       {
+                                                                                           "url":  "./2025-2026  second semester first year/Algebra 2/td/Tutotial 1 Matrices.pdf",
+                                                                                           "name":  "Tutotial 1 Matrices.pdf",
                                                                                            "type":  "pdf",
                                                                                            "category":  "td"
                                                                                        }
