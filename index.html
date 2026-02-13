@@ -4,34 +4,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NCSC Student Hub</title>
+    <title>NSCS Hub - Student-Run Resource Library</title>
     <link rel="icon" type="image/png" href="assets/logo.png">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Poppins:wght@500;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-    <div class="background-orb"></div>
-    <div class="background-orb orb-2"></div>
-
-    <header>
-        <div class="logo">NSCS <span class="highlight">REPOSITORY</span></div>
-        <div class="status">● SYSTEMS OPERATIONAL</div>
+    <header id="header">
+        <div class="logo-container">
+            <img src="assets/logo.png" alt="NSCS Logo">
+            <!-- logo text will be hidden or styled if needed, but the image is the primary branding -->
+        </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#search">Search</a>
+            <a href="#feedback">feedback</a>
+            <a href="#submission">Submission</a>
+            <a href="#contribute" class="btn-contribute">Contribute</a>
+        </nav>
     </header>
 
-    <main id="app">
-        <!-- Dynamic Content will be injected here -->
-    </main>
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Welcome to <br><span>NSCS Hub</span></h1>
+            <p>A student-run library housing all <span>the study resources used</span> in our school.</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <i class="fas fa-users"></i>
+                    Created and maintained <span>solely by students.</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-lock-open"></i>
+                    Ensuring access <span>to excellence for everyone.</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-illustration">
+            <div class="illustration-fallback"></div>
+            <img src="assets/hero_illustration_student.png" alt="Student studying" id="hero-img">
+        </div>
+    </section>
+
+    <div class="main-wrapper">
+        <section class="resources-container" id="search">
+            <div class="resources-header">
+                <h2><i class="fas fa-book-open"></i> Educational Resources</h2>
+                <p>Filter and find the perfect learning materials for your studies</p>
+            </div>
+
+            <div class="filter-bar">
+                <div class="filter-group">
+                    <label><i class="fas fa-calendar-alt"></i> semestre</label>
+                    <select id="filter-semester">
+                        <option value="all">All Semesters</option>
+                        <option value="s1">semestre 1</option>
+                        <option value="s2">semestre 2</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label><i class="fas fa-book"></i> Subject Module</label>
+                    <select id="filter-module">
+                        <option value="all">All Modules</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label><i class="fas fa-folder"></i> Resource Type</label>
+                    <select id="filter-type">
+                        <option value="all">All Types</option>
+                        <option value="pdf">PDF Documents</option>
+                        <option value="lecture">Lectures</option>
+                        <option value="exam">Exams</option>
+                    </select>
+                </div>
+                <button class="btn-clear" id="clear-filters">
+                    <i class="fas fa-sync-alt"></i> Clear All
+                </button>
+            </div>
+
+            <div class="resource-status">
+                <h3>Available Resources</h3>
+                <span class="resource-count" id="resource-count">0 resources</span>
+            </div>
+
+            <div class="resource-grid" id="resource-grid">
+                <!-- Resources injected by JavaScript -->
+            </div>
+        </section>
+
+        <section class="cycles-section">
+            <div class="cycle-container">
+                <div class="cycle-header">
+                    <h2>1 First Cycle</h2>
+                </div>
+                <div class="cycle-grid">
+                    <div class="semester-col">
+                        <h3>Semester 1</h3>
+                        <ul class="module-list" id="s1-list">
+                            <!-- Injected by JavaScript -->
+                        </ul>
+                    </div>
+                    <div class="semester-col">
+                        <h3>Semester 2</h3>
+                        <ul class="module-list" id="s2-list">
+                            <!-- Injected by JavaScript -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contribute-section" id="contribute">
+            <h2>Contribute</h2>
+            <div class="contribute-grid">
+                <div class="contribute-card">
+                    <div class="contribute-icon"><i class="fab fa-github"></i></div>
+                    <h4>Contribute on GitHub</h4>
+                    <a href="#" class="btn-action"><i class="fas fa-mouse-pointer"></i> Contribute on Github</a>
+                </div>
+                <div class="contribute-card">
+                    <div class="contribute-icon"><i class="fas fa-comment-dots"></i></div>
+                    <h4>Give us your feedback</h4>
+                    <a href="#" class="btn-action"><i class="fas fa-bullhorn"></i> Give us your feedback</a>
+                </div>
+                <div class="contribute-card">
+                    <div class="contribute-icon"><i class="fas fa-file-upload"></i></div>
+                    <h4>Submit a Document</h4>
+                    <a href="#" class="btn-action"><i class="fas fa-file-medical"></i> Submit a Document</a>
+                </div>
+            </div>
+        </section>
+    </div>
 
     <footer>
-        <p>&copy; 2026 Kerd Abderrahim. All resources reserved.</p>
+        <p>Made with ❤️ by</p>
+        <div class="brand-footer">STRATOS</div>
     </footer>
 
     <script type="module" src="script.js"></script>
+    <script>
+        // Simple header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
 
 </html>
