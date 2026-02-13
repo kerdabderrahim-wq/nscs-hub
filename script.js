@@ -154,22 +154,6 @@ clearFiltersBtn.onclick = () => {
     applyFilters();
 };
 
-// Handle hero image fallback if broken
-const heroImg = document.getElementById('hero-img');
-if (heroImg) {
-    heroImg.onload = () => {
-        heroImg.style.display = 'block';
-    };
-    heroImg.onerror = () => {
-        // Hide broken image icon and purely use CSS fallback
-        heroImg.style.display = 'none';
-        const fallback = document.querySelector('.illustration-fallback');
-        if (fallback) {
-            fallback.style.opacity = '0.4';
-            fallback.style.filter = 'blur(20px)';
-        }
-    };
-}
 
 // Initial Load
 populateYearFilter();
