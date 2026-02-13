@@ -32,12 +32,25 @@ const allResources = getAllResources();
 // DOM Elements
 const resourceGrid = document.getElementById('resource-grid');
 const resourceCount = document.getElementById('resource-count');
+const filterYear = document.getElementById('filter-year');
 const filterSemester = document.getElementById('filter-semester');
 const filterModule = document.getElementById('filter-module');
 const filterType = document.getElementById('filter-type');
 const clearFiltersBtn = document.getElementById('clear-filters');
 const s1List = document.getElementById('s1-list');
 const s2List = document.getElementById('s2-list');
+
+// Populate Year Filter
+function populateYearFilter() {
+    const years = [...new Set(data.map(y => y.label))].sort();
+    filterYear.innerHTML = '<option value="all">All Years</option>';
+    years.forEach(year => {
+        const opt = document.createElement('option');
+        opt.value = year;
+        opt.textContent = year;
+        filterYear.appendChild(opt);
+    });
+}
 
 // Populate Module Filter
 function populateModuleFilter() {
@@ -75,7 +88,7 @@ function renderResources(filtered) {
             </div>
             <p>${description}</p>
             <a href="${encodeURI(res.url)}" target="_blank" class="btn-google-drive">
-                <i class="fas fa-folder-open"></i> Open in Google Drive
+                <i class="fas fa-file-pdf"></i> Open as PDF
             </a>
         `;
         resourceGrid.appendChild(card);
@@ -84,7 +97,7 @@ function renderResources(filtered) {
 
 // Populate Cycle Lists (Using first year as "First Cycle" example)
 function populateCycles() {
-    const firstYear = data.find(y => y.label.includes('1st Year'));
+    const firstYear = data.find(y => y.label.toLowerCase().includes('1st year'));
     if (!firstYear || firstYear.promos.length === 0) return;
 
     const currentPromo = firstYear.promos[0]; // Take latest promo
@@ -100,6 +113,7 @@ function populateCycles() {
             li.onclick = () => {
                 filterModule.value = mod.name;
                 filterSemester.value = sem.id;
+                filterYear.value = firstYear.label;
                 applyFilters();
                 document.getElementById('search').scrollIntoView({ behavior: 'smooth' });
             };
@@ -110,41 +124,55 @@ function populateCycles() {
 
 // Filter Logic
 function applyFilters() {
+    const year = filterYear.value;
     const sem = filterSemester.value;
     const mod = filterModule.value;
     const type = filterType.value;
 
     const filtered = allResources.filter(res => {
+        const yearMatch = year === 'all' || res.yearLabel === year;
         const semMatch = sem === 'all' || res.semesterId === sem;
         const modMatch = mod === 'all' || res.moduleName === mod;
         const typeMatch = type === 'all' || res.type.toLowerCase() === type.toLowerCase();
-        return semMatch && modMatch && typeMatch;
+        return yearMatch && semMatch && modMatch && typeMatch;
     });
 
     renderResources(filtered);
 }
 
 // Event Listeners
+filterYear.onchange = applyFilters;
 filterSemester.onchange = applyFilters;
 filterModule.onchange = applyFilters;
 filterType.onchange = applyFilters;
 
 clearFiltersBtn.onclick = () => {
+    filterYear.value = 'all';
     filterSemester.value = 'all';
     filterModule.value = 'all';
     filterType.value = 'all';
     applyFilters();
 };
 
-// Start image generation attempt for hero (if not already done)
-// Note: If image fails, fallback to CSS/Logo
+// Handle hero image fallback if broken
 const heroImg = document.getElementById('hero-img');
-heroImg.onerror = () => {
-    heroImg.src = 'assets/logo.png'; // Fallback to logo if illustration missing
-    heroImg.style.maxHeight = '300px';
-};
+if (heroImg) {
+    heroImg.onload = () => {
+        heroImg.style.display = 'block';
+    };
+    heroImg.onerror = () => {
+        // Hide broken image icon and purely use CSS fallback
+        heroImg.style.display = 'none';
+        const fallback = document.querySelector('.illustration-fallback');
+        if (fallback) {
+            fallback.style.opacity = '0.4';
+            fallback.style.filter = 'blur(20px)';
+        }
+    };
+}
 
 // Initial Load
+populateYearFilter();
 populateModuleFilter();
 populateCycles();
 applyFilters();

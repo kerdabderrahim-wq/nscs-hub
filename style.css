@@ -159,11 +159,13 @@ nav a:hover {
 }
 
 .hero-illustration img {
-    max-width: 80%;
+    max-width: 85%;
     height: auto;
     filter: drop-shadow(0 20px 50px rgba(0, 0, 0, 0.3));
     animation: float 6s ease-in-out infinite;
     z-index: 2;
+    border-radius: 20px;
+    /* Light rounding if it's the coin logo */
 }
 
 .illustration-fallback {
@@ -254,8 +256,7 @@ nav a:hover {
 }
 
 .filter-group {
-    flex: 1;
-    min-width: 200px;
+    flex: 1 1 200px;
     display: flex;
     flex-direction: column;
     gap: 8px;
