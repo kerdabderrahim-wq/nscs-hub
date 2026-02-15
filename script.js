@@ -185,7 +185,6 @@ function applyFilters() {
 
         let typeMatch = false;
         const category = (res.category || '').toLowerCase();
-
         if (type === 'all') {
             typeMatch = true;
         } else if (type === 'lecture') {
