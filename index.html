@@ -65,6 +65,12 @@
                     </select>
                 </div>
                 <div class="filter-group">
+                    <label><i class="fas fa-calendar-check"></i> Promo</label>
+                    <select id="filter-promo">
+                        <option value="all">All Promos</option>
+                    </select>
+                </div>
+                <div class="filter-group">
                     <label><i class="fas fa-calendar-alt"></i> semestre</label>
                     <select id="filter-semester">
                         <option value="all">All Semesters</option>
@@ -82,8 +88,9 @@
                     <label><i class="fas fa-folder"></i> Resource Type</label>
                     <select id="filter-type">
                         <option value="all">All Types</option>
-                        <option value="pdf">PDF Documents</option>
                         <option value="lecture">Lectures</option>
+                        <option value="td">TD</option>
+                        <option value="tp">TP</option>
                         <option value="exam">Exams</option>
                     </select>
                 </div>
@@ -102,25 +109,35 @@
             </div>
         </section>
 
-        <section class="cycles-section">
-            <div class="cycle-container">
-                <div class="cycle-header">
-                    <h2>1 First Cycle</h2>
+        <section class="feedback-section" id="feedback">
+            <div class="feedback-container">
+                <div class="feedback-header">
+                    <h2><i class="fas fa-comment-dots"></i> We Value Your Feedback</h2>
+                    <!-- <p>Help us improve NSCS Hub by sharing your thoughts and suggestions.</p> -->
                 </div>
-                <div class="cycle-grid">
-                    <div class="semester-col">
-                        <h3>Semester 1</h3>
-                        <ul class="module-list" id="s1-list">
-                            <!-- Injected by JavaScript -->
-                        </ul>
+                <form class="feedback-form">
+                    <div class="form-group">
+                        <label for="feedback-type">Type of Feedback</label>
+                        <select id="feedback-type" required>
+                            <option value="suggestion">Suggestion</option>
+                            <option value="bug">Report a Bug</option>
+                            <option value="other">Other</option>
+                        </select>
                     </div>
-                    <div class="semester-col">
-                        <h3>Semester 2</h3>
-                        <ul class="module-list" id="s2-list">
-                            <!-- Injected by JavaScript -->
-                        </ul>
+                    <div class="form-group">
+                        <label for="feedback-message">Your Message</label>
+                        <textarea id="feedback-message" rows="5" placeholder="Tell us what you think..."
+                            required></textarea>
                     </div>
-                </div>
+                    <!-- Added email field for follow-up -->
+                    <div class="form-group">
+                        <label for="feedback-email">Email (Optional)</label>
+                        <input type="email" id="feedback-email" placeholder="Your email for follow-up">
+                    </div>
+                    <button type="submit" class="btn-submit">
+                        <i class="fas fa-paper-plane"></i> Send Feedback
+                    </button>
+                </form>
             </div>
         </section>
 
@@ -135,7 +152,7 @@
                 <div class="contribute-card">
                     <div class="contribute-icon"><i class="fas fa-comment-dots"></i></div>
                     <h4>Give us your feedback</h4>
-                    <a href="#" class="btn-action"><i class="fas fa-bullhorn"></i> Give us your feedback</a>
+                    <a href="#feedback" class="btn-action"><i class="fas fa-bullhorn"></i> Give us your feedback</a>
                 </div>
                 <div class="contribute-card">
                     <div class="contribute-icon"><i class="fas fa-file-upload"></i></div>
