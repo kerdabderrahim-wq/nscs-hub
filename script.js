@@ -136,13 +136,13 @@ function renderResources(filtered) {
 
         // Determine badge class and text
         const category = (res.category || '').toLowerCase();
+        const resName = (res.name || '').toLowerCase();
         let badgeClass = 'badge-other';
 
         let displayCategory = res.category || 'Resource';
 
         if (category.includes('lecture') || category.includes('cours')) {
             badgeClass = 'badge-lecture';
-            // displayCategory = 'Lecture'; // Optional: force display if needed, otherwise use data
         } else if (category.includes('exam') || category.includes('test')) {
             badgeClass = 'badge-exam';
         } else if (category.includes('project')) {
@@ -151,9 +151,25 @@ function renderResources(filtered) {
             badgeClass = 'badge-td';
         } else if (category.includes('tp')) {
             badgeClass = 'badge-tp';
+        } else if (category.includes('summary') || resName.includes('summary') || category.includes('résumé')) {
+            badgeClass = 'badge-summary';
+            displayCategory = 'Summary';
+        } else if (category.includes('solution') || resName.includes('solution') || category.includes('corrigé')) {
+            badgeClass = 'badge-solution';
+            displayCategory = 'Solution';
         }
 
-        const description = `A comprehensive ${displayCategory} for ${res.moduleName} covering essential topics for ${res.semesterLabel}.`;
+        // Determine Icon based on file type
+        const type = (res.type || '').toLowerCase();
+        let iconClass = 'fa-file-pdf';
+        if (type.includes('doc')) iconClass = 'fa-file-word';
+        else if (type.includes('ppt')) iconClass = 'fa-file-powerpoint';
+        else if (type.includes('xls')) iconClass = 'fa-file-excel';
+        else if (type.includes('zip') || type.includes('rar')) iconClass = 'fa-file-archive';
+        else if (type.includes('c') || type.includes('java') || type.includes('py') || type.includes('js')) iconClass = 'fa-file-code';
+        else if (type.includes('png') || type.includes('jpg') || type.includes('jpeg')) iconClass = 'fa-file-image';
+
+        const description = `Access the ${displayCategory.toLowerCase()} for ${res.moduleName}. Part of the ${res.yearLabel} ${res.semesterLabel} curriculum.`;
 
         card.innerHTML = `
             <div class="card-top">
@@ -162,7 +178,7 @@ function renderResources(filtered) {
             </div>
             <p>${description}</p>
             <a href="${encodeURI(res.url)}" target="_blank" class="btn-google-drive">
-                <i class="fas fa-file-pdf"></i> Open Resource
+                <i class="fas ${iconClass}"></i> Open Resource
             </a>
         `;
         resourceGrid.appendChild(card);
@@ -195,6 +211,19 @@ function applyFilters() {
             typeMatch = category.includes('tp');
         } else if (type === 'exam') {
             typeMatch = category.includes('exam') || category.includes('test');
+        } else if (type === 'summary') {
+            typeMatch = category.includes('summary') || (res.name || '').toLowerCase().includes('summary') || category.includes('résumé');
+        } else if (type === 'solution') {
+            typeMatch = category.includes('solution') || (res.name || '').toLowerCase().includes('solution') || category.includes('corrigé');
+        } else if (type === 'other') {
+            const isKnownType = category.includes('lecture') || category.includes('cours') ||
+                category.includes('exam') || category.includes('test') ||
+                category.includes('project') || category.includes('td') ||
+                category.includes('tp') || category.includes('summary') ||
+                resName.includes('summary') || category.includes('résumé') ||
+                category.includes('solution') || resName.includes('solution') ||
+                category.includes('corrigé');
+            typeMatch = !isKnownType;
         } else {
             // Fallback for exact match if any other types are added
             typeMatch = category === type;

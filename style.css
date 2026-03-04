@@ -412,6 +412,24 @@ nav a:hover {
     font-size: 0.75rem;
 }
 
+.badge-summary {
+    background: #fef9c3;
+    color: #854d0e;
+    padding: 0.25rem 0.75rem;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 0.75rem;
+}
+
+.badge-solution {
+    background: #d1fae5;
+    color: #065f46;
+    padding: 0.25rem 0.75rem;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 0.75rem;
+}
+
 .badge-other {
     background: #f1f5f9;
     color: #64748b;
