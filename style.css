@@ -24,6 +24,7 @@ body {
     color: var(--text-white);
     min-height: 100vh;
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 /* Header & Nav */
@@ -357,6 +358,7 @@ nav a:hover {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    gap: 1rem;
 }
 
 .card-top h3 {
