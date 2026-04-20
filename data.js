@@ -1140,6 +1140,36 @@
                                                                                            "category":  "book"
                                                                                        },
                                                                                        {
+                                                                                           "url":  "./2025-2026  second semester first year/Algebra 2/exam/midterm.pdf",
+                                                                                           "name":  "midterm.pdf",
+                                                                                           "type":  "pdf",
+                                                                                           "category":  "exam"
+                                                                                       },
+                                                                                       {
+                                                                                           "url":  "./2025-2026  second semester first year/Algebra 2/Lectures/Chapitre 2 EV partie1 (1).pdf",
+                                                                                           "name":  "Chapitre 2 EV partie1 (1).pdf",
+                                                                                           "type":  "pdf",
+                                                                                           "category":  "Lectures"
+                                                                                       },
+                                                                                       {
+                                                                                           "url":  "./2025-2026  second semester first year/Algebra 2/Lectures/Chapitre 2 EV partie2 (1).pdf",
+                                                                                           "name":  "Chapitre 2 EV partie2 (1).pdf",
+                                                                                           "type":  "pdf",
+                                                                                           "category":  "Lectures"
+                                                                                       },
+                                                                                       {
+                                                                                           "url":  "./2025-2026  second semester first year/Algebra 2/Lectures/Chapitre 2 EV partie3 (2).pdf",
+                                                                                           "name":  "Chapitre 2 EV partie3 (2).pdf",
+                                                                                           "type":  "pdf",
+                                                                                           "category":  "Lectures"
+                                                                                       },
+                                                                                       {
+                                                                                           "url":  "./2025-2026  second semester first year/Algebra 2/Lectures/Chapitre 2 EV partie4 (2).pdf",
+                                                                                           "name":  "Chapitre 2 EV partie4 (2).pdf",
+                                                                                           "type":  "pdf",
+                                                                                           "category":  "Lectures"
+                                                                                       },
+                                                                                       {
                                                                                            "url":  "./2025-2026  second semester first year/Algebra 2/Lectures/Chapter1 matrix.pdf",
                                                                                            "name":  "Chapter1 matrix.pdf",
                                                                                            "type":  "pdf",
@@ -1152,8 +1182,32 @@
                                                                                            "category":  "Lectures"
                                                                                        },
                                                                                        {
-                                                                                           "url":  "./2025-2026  second semester first year/Algebra 2/td/Chapter 1 matrices.pdf",
-                                                                                           "name":  "Chapter 1 matrices.pdf",
+                                                                                           "url":  "./2025-2026  second semester first year/Algebra 2/td/corrige TD2 partie1 (3).pdf",
+                                                                                           "name":  "corrige TD2 partie1 (3).pdf",
+                                                                                           "type":  "pdf",
+                                                                                           "category":  "td"
+                                                                                       },
+                                                                                       {
+                                                                                           "url":  "./2025-2026  second semester first year/Algebra 2/td/corrige TD2 partie2 (4).pdf",
+                                                                                           "name":  "corrige TD2 partie2 (4).pdf",
+                                                                                           "type":  "pdf",
+                                                                                           "category":  "td"
+                                                                                       },
+                                                                                       {
+                                                                                           "url":  "./2025-2026  second semester first year/Algebra 2/td/corrige TD2 partie3 (3).pdf",
+                                                                                           "name":  "corrige TD2 partie3 (3).pdf",
+                                                                                           "type":  "pdf",
+                                                                                           "category":  "td"
+                                                                                       },
+                                                                                       {
+                                                                                           "url":  "./2025-2026  second semester first year/Algebra 2/td/corrige TD2 partie4 (4).pdf",
+                                                                                           "name":  "corrige TD2 partie4 (4).pdf",
+                                                                                           "type":  "pdf",
+                                                                                           "category":  "td"
+                                                                                       },
+                                                                                       {
+                                                                                           "url":  "./2025-2026  second semester first year/Algebra 2/td/série 2 espaces vectoriels (4).pdf",
+                                                                                           "name":  "série 2 espaces vectoriels (4).pdf",
                                                                                            "type":  "pdf",
                                                                                            "category":  "td"
                                                                                        },
@@ -1168,12 +1222,30 @@
                                                                                            "name":  "Tutotial 1 Matrices.pdf",
                                                                                            "type":  "pdf",
                                                                                            "category":  "td"
+                                                                                       },
+                                                                                       {
+                                                                                           "url":  "./2025-2026  second semester first year/Algebra 2/td/Tutotial 2 Vector Spaces (8).pdf",
+                                                                                           "name":  "Tutotial 2 Vector Spaces (8).pdf",
+                                                                                           "type":  "pdf",
+                                                                                           "category":  "td"
                                                                                        }
                                                                                    ]
                                                                  },
                                                                  {
                                                                      "name":  "Algorithms and dynamic data structures",
                                                                      "resources":  [
+                                                                                       {
+                                                                                           "url":  "./2025-2026  second semester first year/Algorithms and dynamic data structures/exam/ALSDS project S2 2025-2026.pdf",
+                                                                                           "name":  "ALSDS project S2 2025-2026.pdf",
+                                                                                           "type":  "pdf",
+                                                                                           "category":  "exam"
+                                                                                       },
+                                                                                       {
+                                                                                           "url":  "./2025-2026  second semester first year/Algorithms and dynamic data structures/exam/midterm.pdf",
+                                                                                           "name":  "midterm.pdf",
+                                                                                           "type":  "pdf",
+                                                                                           "category":  "exam"
+                                                                                       },
                                                                                        {
                                                                                            "url":  "./2025-2026  second semester first year/Algorithms and dynamic data structures/Lectures/Chapter 0_General overview.pdf",
                                                                                            "name":  "Chapter 0_General overview.pdf",
@@ -1191,12 +1263,6 @@
                                                                                            "name":  "TD-TP_Chapter_2_Linked linear lists_2025-2026 (1).pdf",
                                                                                            "type":  "pdf",
                                                                                            "category":  "TD"
-                                                                                       },
-                                                                                       {
-                                                                                           "url":  "./2025-2026  second semester first year/Algorithms and dynamic data structures/td exam project/CEA2_AB.pdf",
-                                                                                           "name":  "CEA2_AB.pdf",
-                                                                                           "type":  "pdf",
-                                                                                           "category":  "td exam project"
                                                                                        }
                                                                                    ]
                                                                  },
@@ -1204,8 +1270,20 @@
                                                                      "name":  "Electronic 1",
                                                                      "resources":  [
                                                                                        {
+                                                                                           "url":  "./2025-2026  second semester first year/Electronic 1/lectures/ch1_diode.pdf",
+                                                                                           "name":  "ch1_diode.pdf",
+                                                                                           "type":  "pdf",
+                                                                                           "category":  "lectures"
+                                                                                       },
+                                                                                       {
                                                                                            "url":  "./2025-2026  second semester first year/Electronic 1/td/TD1 FE1.pdf",
                                                                                            "name":  "TD1 FE1.pdf",
+                                                                                           "type":  "pdf",
+                                                                                           "category":  "td"
+                                                                                       },
+                                                                                       {
+                                                                                           "url":  "./2025-2026  second semester first year/Electronic 1/td/TD2 FE1.pdf",
+                                                                                           "name":  "TD2 FE1.pdf",
                                                                                            "type":  "pdf",
                                                                                            "category":  "td"
                                                                                        }
@@ -1245,6 +1323,12 @@
                                                                                            "category":  "Lectures"
                                                                                        },
                                                                                        {
+                                                                                           "url":  "./2025-2026  second semester first year/Graph theory/Lectures/Chapter 4 _Tree and rooted Tree.pdf",
+                                                                                           "name":  "Chapter 4 _Tree and rooted Tree.pdf",
+                                                                                           "type":  "pdf",
+                                                                                           "category":  "Lectures"
+                                                                                       },
+                                                                                       {
                                                                                            "url":  "./2025-2026  second semester first year/Graph theory/Lectures/Chapter 5_The shortest path problem (1).pdf",
                                                                                            "name":  "Chapter 5_The shortest path problem (1).pdf",
                                                                                            "type":  "pdf",
@@ -1259,6 +1343,12 @@
                                                                                        {
                                                                                            "url":  "./2025-2026  second semester first year/Graph theory/td/Tutorial Sheet 2.pdf",
                                                                                            "name":  "Tutorial Sheet 2.pdf",
+                                                                                           "type":  "pdf",
+                                                                                           "category":  "td"
+                                                                                       },
+                                                                                       {
+                                                                                           "url":  "./2025-2026  second semester first year/Graph theory/td/Tutorial Sheet 3.pdf",
+                                                                                           "name":  "Tutorial Sheet 3.pdf",
                                                                                            "type":  "pdf",
                                                                                            "category":  "td"
                                                                                        }
@@ -1291,6 +1381,18 @@
                                                                      "name":  "Network Foundation 2",
                                                                      "resources":  [
                                                                                        {
+                                                                                           "url":  "./2025-2026  second semester first year/Network Foundation 2/exam/Homework-Teams.pdf",
+                                                                                           "name":  "Homework-Teams.pdf",
+                                                                                           "type":  "pdf",
+                                                                                           "category":  "exam"
+                                                                                       },
+                                                                                       {
+                                                                                           "url":  "./2025-2026  second semester first year/Network Foundation 2/exam/midterm.pdf",
+                                                                                           "name":  "midterm.pdf",
+                                                                                           "type":  "pdf",
+                                                                                           "category":  "exam"
+                                                                                       },
+                                                                                       {
                                                                                            "url":  "./2025-2026  second semester first year/Network Foundation 2/Lectures/Chapter2 Networkaccesslayer.pdf",
                                                                                            "name":  "Chapter2 Networkaccesslayer.pdf",
                                                                                            "type":  "pdf",
@@ -1321,12 +1423,6 @@
                                                                                            "category":  "Lectures"
                                                                                        },
                                                                                        {
-                                                                                           "url":  "./2025-2026  second semester first year/Network Foundation 2/project/Homework-Teams.pdf",
-                                                                                           "name":  "Homework-Teams.pdf",
-                                                                                           "type":  "pdf",
-                                                                                           "category":  "project"
-                                                                                       },
-                                                                                       {
                                                                                            "url":  "./2025-2026  second semester first year/Network Foundation 2/tp/Lab 1 student .pdf",
                                                                                            "name":  "Lab 1 student .pdf",
                                                                                            "type":  "pdf",
@@ -1351,14 +1447,38 @@
                                                                                            "category":  "tp"
                                                                                        },
                                                                                        {
+                                                                                           "url":  "./2025-2026  second semester first year/Network Foundation 2/tp/Lab 5 student  (3).pdf",
+                                                                                           "name":  "Lab 5 student  (3).pdf",
+                                                                                           "type":  "pdf",
+                                                                                           "category":  "tp"
+                                                                                       },
+                                                                                       {
                                                                                            "url":  "./2025-2026  second semester first year/Network Foundation 2/tp/Lab 5 student .pdf",
                                                                                            "name":  "Lab 5 student .pdf",
                                                                                            "type":  "pdf",
                                                                                            "category":  "tp"
                                                                                        },
                                                                                        {
+                                                                                           "url":  "./2025-2026  second semester first year/Network Foundation 2/tp/Lab 5-Details (3).pdf",
+                                                                                           "name":  "Lab 5-Details (3).pdf",
+                                                                                           "type":  "pdf",
+                                                                                           "category":  "tp"
+                                                                                       },
+                                                                                       {
+                                                                                           "url":  "./2025-2026  second semester first year/Network Foundation 2/tp/Lab 6 student  (2).pdf",
+                                                                                           "name":  "Lab 6 student  (2).pdf",
+                                                                                           "type":  "pdf",
+                                                                                           "category":  "tp"
+                                                                                       },
+                                                                                       {
                                                                                            "url":  "./2025-2026  second semester first year/Network Foundation 2/tp/Lab 6 student .pdf",
                                                                                            "name":  "Lab 6 student .pdf",
+                                                                                           "type":  "pdf",
+                                                                                           "category":  "tp"
+                                                                                       },
+                                                                                       {
+                                                                                           "url":  "./2025-2026  second semester first year/Network Foundation 2/tp/Lab 6-Details (2).pdf",
+                                                                                           "name":  "Lab 6-Details (2).pdf",
                                                                                            "type":  "pdf",
                                                                                            "category":  "tp"
                                                                                        },
